@@ -8,6 +8,7 @@ import androidx.annotation.RequiresApi
 import androidx.appcompat.app.AppCompatActivity
 
 
+
 class Radio : AppCompatActivity() {
 
 
@@ -17,11 +18,12 @@ class Radio : AppCompatActivity() {
         setContentView(R.layout.radio)
 
 
-        var mediaplayer :MediaPlayer = MediaPlayer()
+   //     val player = ExoPlayer.Builder(this).build()
+       var mediaplayer :MediaPlayer = MediaPlayer()
 
         mediaplayer.setAudioStreamType(AudioManager.STREAM_MUSIC)
-        mediaplayer.setDataSource("https://www.youtube.com/watch?v=Dl459QlwkdQ")
-     //   mediaplayer.setDataSource("https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3")
+  //      mediaplayer.setDataSource("https://www.youtube.com/watch?v=Dl459QlwkdQ")
+        mediaplayer.setDataSource("https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3")
 
         mediaplayer.prepare()
         mediaplayer.start()

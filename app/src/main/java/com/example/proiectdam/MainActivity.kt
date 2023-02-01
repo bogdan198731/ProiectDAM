@@ -58,6 +58,20 @@ class MainActivity : AppCompatActivity() {
             this.startActivity(myIntentRadio)
 
         }
+
+        var myIntentInternet: Intent = Intent(this@MainActivity, Internet::class.java)
+        Play_internet.setOnClickListener {
+            myIntentLista.putExtra("key", true)
+            this.startActivity(myIntentInternet)
+
+        }
+
+        var myIntentAbout: Intent = Intent(this@MainActivity, About::class.java)
+        btn_About.setOnClickListener {
+
+            this.startActivity(myIntentAbout)
+
+        }
     }
 }
 

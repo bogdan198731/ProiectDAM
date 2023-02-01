@@ -5,13 +5,19 @@ pluginManagement{
         mavenCentral()
     }
 }
+
+
 dependencyResolutionManagement{
     repositoriesMode.set(RepositoriesMode.FAIL_ON_PROJECT_REPOS)
     repositories{
         google()
         jcenter()
         mavenCentral()
+        mavenCentral()
+        gradlePluginPortal()
     }
 }
+
 include ':app'
 rootProject.name = "Proiect DAM"
+
